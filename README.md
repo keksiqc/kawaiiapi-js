@@ -7,7 +7,7 @@ npm install kawaii-api
 ```
 
 # Example
-```
+```js
 const { Kawaii } = require("kawaii-api")
 
 const api = new Kawaii("token")
