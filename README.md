@@ -1,9 +1,9 @@
 # kawaii api
-The [kawaii api](https://kawaii.red/) from Error44 as npm package
+The [kawaii api](https://kawaii.red/) from Error44 as [npm package](https://www.npmjs.com/package/kawaii-api)
 
 # Download
 ```
-npm install kawaii-api
+npm i kawaii-api
 ```
 
 # Example
