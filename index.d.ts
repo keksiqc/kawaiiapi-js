@@ -6,3 +6,4 @@ declare module "kawaii-api" {
     public static endpoints(main: string);
   }
 }
+
