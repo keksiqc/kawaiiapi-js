@@ -6,7 +6,6 @@ The [kawaii api](https://kawaii.red/) from Error44 as [npm package](https://www.
 npm i kawaii-api
 ```
 
-<<<<<<< HEAD
 # Examples
 ## JavaScript
 ```js
@@ -34,11 +33,6 @@ const endpoints = async() => {
     console.log(result);
 }
 ```
-=======
-# Example
-```js
-const { Kawaii } = require("kawaii-api")
->>>>>>> f2a02a386cf0b3b98e96ce363c6c2fbde425fa23
 
 ## TypeScript
 ```ts
@@ -61,13 +55,8 @@ const get = async() => {
     console.log(result);
 }
 
-<<<<<<< HEAD
 const endpoints = async() => {
     const result = await api.endpoints("gif");
     console.log(result);
 }
 ```
-=======
-api.endpoints("gif").then(result => console.log(result))
-```
->>>>>>> f2a02a386cf0b3b98e96ce363c6c2fbde425fa23
