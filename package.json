@@ -1,6 +1,6 @@
 {
-  "name": "kawaii-api",
-  "version": "1.1.0",
+  "name": "kawaiiapi",
+  "version": "1.1.1",
   "description": "The kawaii api from Error44 as npm package",
   "keywords": [
     "kawaii api",
@@ -8,16 +8,17 @@
     "anime gif",
     "gif api"
   ],
-  "homepage": "https://github.com/Keksiuwu/kawaii-api-js",
+  "homepage": "https://github.com/keksiqc/kawaiiapi-js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Keksiuwu/kawaii-api-js"
+    "url": "https://github.com/keksiqc/kawaiiapi-js"
   },
-  "author": "Keksiuwu",
+  "author": "Keksiqc",
+  "author_email": "contact@keksi.me",
   "license": "MIT",
   "private": false,
   "dependencies": {
