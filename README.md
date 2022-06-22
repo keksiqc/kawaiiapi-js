@@ -2,61 +2,66 @@
 The [kawaii api](https://kawaii.red/) from Error44 as [npm package](https://www.npmjs.com/package/kawaii-api)
 
 # Download
-```
-npm i kawaii-api
+```sh
+# npm
+npm i kawaiiapi
+
+# yarn
+yarn add kawaiiapi
 ```
 
 # Examples
-## JavaScript
+
 ```js
-const { Kawaii } = require("kawaii-api");
+const { Kawaii } = require("kawaiiapi"); // or import { Kawaii } from 'kawaiiapi';
 
-const api = new Kawaii("token");
+const api = new Kawaii("anonymous"); // you can't use stats with this token
 
-api.get("gif", "kiss").then((result) => {
-        console.log(result);
-    });
+api.endpoints("gif").then(res => {
+    console.log(res);
+});
 
-api.endpoints("gif").then((result) => {
-        console.log(result);
-    });
+api.get("gif", "kiss").then(res => {
+    console.log(res)
+})
+
+api.random("gif").then(res => {
+    console.log(res)
+})
+
+api.gif("kiss").then(res => {
+    console.log(res)
+})
+
+api.stats().then(res => {
+    const stats = res
+})
 
 // or async/await
 
-const get = async() => {
-    const result = await api.get("gif", "kiss");
-    console.log(result);
-}
+const example = async() => {
 
-const endpoints = async() => {
-    const result = await api.endpoints("gif");
-    console.log(result);
+    await api.endpoints("gif")
+
+    await api.get("gif", "kiss")
+
+    await api.random("gif")
+
+    await api.gif("kiss")
+
+    const stats = await api.stats()
 }
 ```
 
-## TypeScript
-```ts
-import { Kawaii } from "kawaii-api";
+# All Stats
 
-const api = new Kawaii("token");
-
-api.get("gif", "kiss").then((result) => {
-    console.log(result);
-});
-
-api.endpoints("gif").then((result) => {
-    console.log(result);
-});
-
-// or async/await
-
-const get = async() => {
-    const result = await api.get("gif", "kiss");
-    console.log(result);
-}
-
-const endpoints = async() => {
-    const result = await api.endpoints("gif");
-    console.log(result);
-}
+```javascript
+stats.endpoints
+stats.all
+stats.failed
+stats.history
+stats.most_endpoint
+stats.most_endpoints
+stats.most_type
+stats.most_types
 ```
