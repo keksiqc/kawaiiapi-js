@@ -1,4 +1,4 @@
-declare module "kawaiiapi" {
+declare module "kawaii-api" {
     export class Kawaii {
         public constructor(token: string);
 

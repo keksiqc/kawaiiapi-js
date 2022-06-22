@@ -4,16 +4,16 @@ The [kawaii api](https://kawaii.red/) from Error44 as [npm package](https://www.
 # Download
 ```sh
 # npm
-npm i kawaiiapi
+npm i kawaii-api
 
 # yarn
-yarn add kawaiiapi
+yarn add kawaii-api
 ```
 
 # Examples
 
 ```js
-const { Kawaii } = require("kawaiiapi"); // or import { Kawaii } from 'kawaiiapi';
+const { Kawaii } = require("kawaii-api"); // or import { Kawaii } from 'kawaii-api';
 
 const api = new Kawaii("anonymous"); // you can't use stats with this token
 
